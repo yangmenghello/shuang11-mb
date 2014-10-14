@@ -1290,7 +1290,7 @@ function Game(){
 
 </head>
 <body>
-    <body style="background: black;" onload="Game()">
+    <body style="background: black;">
     <audio hidden="hidden" style="display:hide" id="musicBox1" preload="metadata" src="sounds/sound.mp3">
     <p>您的浏览器不支持 audio 标签.</p>
 </audio>
@@ -1298,6 +1298,8 @@ function Game(){
             <div id="content"></div>
             </div>
         <div id="load">loading:0%</div>
-</body>
+<script>
+window.onload=loading();
+</script>
 </body>
 </html>
